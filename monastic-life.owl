@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.org/nampi/owl/monastic-life">
-        <owl:versionIRI rdf:resource="http://purl.org/nampi/owl/monastic-life/0.3.1"/>
-        <owl:imports rdf:resource="http://purl.org/nampi/owl/core/0.2.1"/>
+        <owl:versionIRI rdf:resource="http://purl.org/nampi/owl/monastic-life/0.4.0"/>
+        <owl:imports rdf:resource="http://purl.org/nampi/owl/core/0.3.0"/>
     </owl:Ontology>
     
 
@@ -60,7 +60,10 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/nampi/owl/monastic-life#has_godparent">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/nampi/owl/core#has_other_participant"/>
+        <rdfs:comment xml:lang="en">Signifies that an actor acts as godparent of the main person in the event (e.g. at baptism or confirmation).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Bedeutet, dass ein Akteur als Pate bzw. Patin der Hauptperson des Ereignisses auftritt (z. B. bei Taufe oder Firmung).</rdfs:comment>
         <rdfs:label xml:lang="en">has godparent</rdfs:label>
+        <rdfs:label xml:lang="de">hat Paten</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -69,7 +72,10 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/nampi/owl/monastic-life#is_godparent_in">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/nampi/owl/core#participates_in"/>
+        <rdfs:comment xml:lang="en">Signifies that an actor acts as godparent of the main person in the event (e.g. at baptism or confirmation).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Bedeutet, dass ein Akteur als Pate bzw. Patin der Hauptperson des Ereignisses auftritt (z. B. bei Taufe oder Firmung).</rdfs:comment>
         <rdfs:label xml:lang="en">is godparent in</rdfs:label>
+        <rdfs:label xml:lang="de">ist Pate in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -154,7 +160,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#academic_degree">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">An academic degree conferred by a university or similar institution (e.g. baccalaureate, magister, doctorate).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein von einer Universität oder einer ähnlichen Einrichtung verliehener akademischer Grad (z. B. Bakkalaureat, Magister, Doktorat).</rdfs:comment>
         <rdfs:label xml:lang="en">Academic degree</rdfs:label>
+        <rdfs:label xml:lang="de">Akademischer Grad</rdfs:label>
     </owl:Class>
     
 
@@ -163,7 +172,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#administration_of_a_community">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:comment xml:lang="en">A catch-all occupation for working in the administration of a religious community, regardless of the specific office held. Captures the day-to-day administrative activity itself, performed by anyone involved in it (the abbot, the procurator, the cellarer, and so on), as distinct from the status of being community superior.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Sammeltätigkeit für die Mitarbeit in der Verwaltung einer Ordensgemeinschaft, unabhängig vom konkreten innegehabten Amt. Erfasst die laufende Verwaltungsarbeit selbst, ausgeübt von allen daran Beteiligten (Abt, Prokurator, Kellermeister usw.), in Abgrenzung zum Status des Gemeinschaftsoberen.</rdfs:comment>
         <rdfs:label xml:lang="en">Administration of a community</rdfs:label>
+        <rdfs:label xml:lang="de">Verwaltung einer Gemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -172,7 +184,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#anniversary">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#aspect"/>
+        <rdfs:comment xml:lang="en">An annually recurring commemoration of a personal milestone, most often the anniversary of religious profession or of priestly ordination (Professjubiläum, Priesterjubiläum), and other comparable jubilees.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein jährlich wiederkehrendes Gedenken an einen persönlichen Meilenstein, meist die Jubiläen der Ordensprofess oder der Priesterweihe (Professjubiläum, Priesterjubiläum) sowie vergleichbare Jubiläen.</rdfs:comment>
         <rdfs:label xml:lang="en">Anniversary</rdfs:label>
+        <rdfs:label xml:lang="de">Jubiläum</rdfs:label>
     </owl:Class>
     
 
@@ -181,7 +196,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#associated_parish_clergy">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:comment xml:lang="en">Clergy whose activity is associated with a parish, in any role. Covers, for example: parish priest (parochus, parson), retired parish priest (parochus emeritus), curate (curatus, curatus ecclesiasticus), vicar, and cooperator.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Geistliche, deren Tätigkeit mit einer Pfarre verbunden ist, in jeglicher Funktion. Erfasst zum Beispiel: Pfarrer (Parochus, parson), emeritierter Pfarrer (Parochus emeritus), Kurat (Curatus, Curatus ecclesiasticus), Vikar und Kooperator.</rdfs:comment>
         <rdfs:label xml:lang="en">Associated parish clergy</rdfs:label>
+        <rdfs:label xml:lang="de">Pfarrgeistlichkeit</rdfs:label>
     </owl:Class>
     
 
@@ -190,7 +208,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#burial">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#aspect"/>
+        <rdfs:comment xml:lang="en">A burial: aspects related to interring the body of a deceased person, including the place of burial.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Bestattung: Aspekte rund um die Beisetzung einer verstorbenen Person, einschließlich des Bestattungsorts.</rdfs:comment>
         <rdfs:label xml:lang="en">Burial</rdfs:label>
+        <rdfs:label xml:lang="de">Bestattung</rdfs:label>
     </owl:Class>
     
 
@@ -199,7 +220,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#candidate">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">A candidate seeking admission to a religious community, prior to entry into the novitiate.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Anwärter bzw. eine Anwärterin auf Aufnahme in eine Ordensgemeinschaft vor dem Eintritt in das Noviziat.</rdfs:comment>
         <rdfs:label xml:lang="en">Candidate</rdfs:label>
+        <rdfs:label xml:lang="de">Kandidat</rdfs:label>
     </owl:Class>
     
 
@@ -208,7 +232,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#catholic_liturgy">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#aspect"/>
+        <rdfs:comment xml:lang="en">An aspect relating to Catholic liturgy, used primarily for roles exercised within the wider practice of Catholic liturgy (e.g. celebrant, deacon, subdeacon, cantor, master of ceremonies, server).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Aspekt mit Bezug zur katholischen Liturgie, vorrangig verwendet für Rollen, die im weiteren Rahmen der katholischen Liturgiepraxis ausgeübt werden (z. B. Zelebrant, Diakon, Subdiakon, Kantor, Zeremoniar, Ministrant).</rdfs:comment>
         <rdfs:label xml:lang="en">Catholic liturgy</rdfs:label>
+        <rdfs:label xml:lang="de">Katholische Liturgie</rdfs:label>
     </owl:Class>
     
 
@@ -217,7 +244,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#christian_denomination">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#religious_denomination"/>
+        <rdfs:comment xml:lang="en">A Christian denomination (e.g. Roman Catholic, Lutheran, Reformed, Orthodox).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine christliche Konfession (z. B. römisch-katholisch, lutherisch, reformiert, orthodox).</rdfs:comment>
         <rdfs:label xml:lang="en">Christian denomination</rdfs:label>
+        <rdfs:label xml:lang="de">Christliche Konfession</rdfs:label>
     </owl:Class>
     
 
@@ -227,7 +257,10 @@
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#clergy">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">Belonging to the clergy: as a status, the standing of an ordained person within the clerical estate; as an occupation, the exercise of clerical functions such as preaching, celebrating the sacraments, and pastoral care. The two facets typically coincide for an active cleric.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Zugehörigkeit zum Klerus: als Status die Stellung einer geweihten Person im Klerikerstand; als Tätigkeit die Ausübung klerikaler Funktionen wie Predigt, Spendung der Sakramente und Seelsorge. Beide Facetten fallen bei aktiven Klerikern üblicherweise zusammen.</rdfs:comment>
         <rdfs:label xml:lang="en">Clergy</rdfs:label>
+        <rdfs:label xml:lang="de">Klerus</rdfs:label>
     </owl:Class>
     
 
@@ -236,7 +269,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#community_subsacristan">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#monastic_office_with_spiritual_focus"/>
+        <rdfs:comment xml:lang="en">A subsacristan in a monastic community: deputy to the sacristan, responsible for assisting with the care of the sacristy, liturgical vessels, and vestments.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Subsakristan einer Klostergemeinschaft: Stellvertreter des Sakristans, zuständig für die Mitbetreuung der Sakristei, der liturgischen Geräte und der Paramente.</rdfs:comment>
         <rdfs:label xml:lang="en">Community subsacristan</rdfs:label>
+        <rdfs:label xml:lang="de">Subsakristan einer Gemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -245,7 +281,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#community_superior">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">The status of being the head of a religious community (abbot, abbess, prior, prioress, provost, etc.).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Der Status der Vorsteherschaft einer Ordensgemeinschaft (Abt, Äbtissin, Prior, Priorin, Propst u. a.).</rdfs:comment>
         <rdfs:label xml:lang="en">Community superior</rdfs:label>
+        <rdfs:label xml:lang="de">Oberer einer Gemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -254,7 +293,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#diocese">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#religious_polity"/>
+        <rdfs:comment xml:lang="en">A diocese: an ecclesiastical territory under the jurisdiction of a bishop.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Diözese: ein kirchliches Territorium unter der Jurisdiktion eines Bischofs.</rdfs:comment>
         <rdfs:label xml:lang="en">Diocese</rdfs:label>
+        <rdfs:label xml:lang="de">Diözese</rdfs:label>
     </owl:Class>
     
 
@@ -263,7 +305,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#educatee">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:comment xml:lang="en">A person being educated, e.g. a pupil at a school, a student at a university or college, a novice in formation, or any learner in another educational setting.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Person, die unterrichtet wird, z. B. ein Schüler an einer Schule, ein Studierender an einer Universität oder einem Kollegium, ein Novize in Ausbildung oder ein Lernender in einem anderen Ausbildungskontext.</rdfs:comment>
         <rdfs:label xml:lang="en">Educatee</rdfs:label>
+        <rdfs:label xml:lang="de">Auszubildender</rdfs:label>
     </owl:Class>
     
 
@@ -273,7 +318,10 @@
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#educator">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">A person who teaches or trains others, e.g. a schoolmaster, a university or college lecturer, or a novice master in a religious community.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Person, die andere unterrichtet oder ausbildet, z. B. ein Schulmeister, ein Hochschullehrer an einer Universität oder einem Kollegium oder ein Novizenmeister in einer Ordensgemeinschaft.</rdfs:comment>
         <rdfs:label xml:lang="en">Educator</rdfs:label>
+        <rdfs:label xml:lang="de">Lehrender</rdfs:label>
     </owl:Class>
     
 
@@ -282,7 +330,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#family">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#group"/>
+        <rdfs:comment xml:lang="en">A family in the kinship sense (biological or by marriage).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Familie im verwandtschaftlichen Sinn (biologisch oder durch Heirat).</rdfs:comment>
         <rdfs:label xml:lang="en">Family</rdfs:label>
+        <rdfs:label xml:lang="de">Familie</rdfs:label>
     </owl:Class>
     
 
@@ -291,7 +342,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#family_name">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#name"/>
+        <rdfs:comment xml:lang="en">A family name (surname) shared by members of a family.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Familienname (Nachname), der von den Mitgliedern einer Familie geteilt wird.</rdfs:comment>
         <rdfs:label xml:lang="en">Family name</rdfs:label>
+        <rdfs:label xml:lang="de">Familienname</rdfs:label>
     </owl:Class>
     
 
@@ -300,7 +354,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#given_name">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#name"/>
+        <rdfs:comment xml:lang="en">A given (first, baptismal) name, typically conferred at birth or baptism.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Vorname (Taufname), der üblicherweise bei Geburt oder Taufe verliehen wird.</rdfs:comment>
         <rdfs:label xml:lang="en">Given name</rdfs:label>
+        <rdfs:label xml:lang="de">Vorname</rdfs:label>
     </owl:Class>
     
 
@@ -309,7 +366,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#highly_skilled_professional">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:comment xml:lang="en">A profession requiring substantial formal training or specialised expertise, as distinct from ordinary trades and crafts (which are covered by `trade`). Examples: organist, apothecary, medical doctor, judge.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Beruf, der eine umfangreiche formale Ausbildung oder spezialisierte Fachkenntnisse erfordert, in Abgrenzung zu gewöhnlichen Handwerken (die unter `trade` erfasst werden). Beispiele: Organist, Apotheker, Arzt, Richter.</rdfs:comment>
         <rdfs:label xml:lang="en">Highly skilled professional</rdfs:label>
+        <rdfs:label xml:lang="de">Hochqualifizierter Beruf</rdfs:label>
     </owl:Class>
     
 
@@ -318,8 +378,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#historic_diocese">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#diocese"/>
-        <rdfs:comment xml:lang="en">A diocese that doesn&apos;t exist in this for anymore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A diocese that no longer exists in this form (suppressed, merged, or reorganised).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Diözese, die in dieser Form nicht mehr besteht (aufgehoben, zusammengelegt oder neu organisiert).</rdfs:comment>
         <rdfs:label xml:lang="en">Historic diocese</rdfs:label>
+        <rdfs:label xml:lang="de">Historische Diözese</rdfs:label>
     </owl:Class>
     
 
@@ -328,7 +390,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#manuscript">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#paged_source"/>
+        <rdfs:comment xml:lang="en">A handwritten source document such as a codex, register, or charter cartulary.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine handschriftliche Quelle wie ein Kodex, ein Register oder ein Urkundenkopialbuch.</rdfs:comment>
         <rdfs:label xml:lang="en">Manuscript</rdfs:label>
+        <rdfs:label xml:lang="de">Handschrift</rdfs:label>
     </owl:Class>
     
 
@@ -337,7 +402,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#member_of_a_religious_community">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">The status of belonging to a religious community, in any capacity — covering, for example, candidates, novices, professed members, and visiting members. Use a more specific subclass where available.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Der Status der Zugehörigkeit zu einer Ordensgemeinschaft in jeglicher Form – erfasst z. B. Kandidaten, Novizen, Professmitglieder und zu Gast weilende Mitglieder. Wenn möglich, sollte eine spezifischere Unterklasse verwendet werden.</rdfs:comment>
         <rdfs:label xml:lang="en">Member of a religious community</rdfs:label>
+        <rdfs:label xml:lang="de">Mitglied einer Ordensgemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -346,7 +414,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#member_of_a_religious_community_visiting">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#member_of_a_religious_community"/>
+        <rdfs:comment xml:lang="en">The status of being a guest of a religious community, hosted under its hospitality rather than fully belonging to it. Covers generic guests as well as community-specific guest roles such as the Carthusian hospes.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Der Status, Gast einer Ordensgemeinschaft zu sein, im Rahmen ihrer Gastfreundschaft beherbergt und nicht vollständig zu ihr gehörend. Erfasst allgemeine Gäste ebenso wie gemeinschaftsspezifische Gastrollen wie den kartusianischen Hospes.</rdfs:comment>
         <rdfs:label xml:lang="en">Member of a religious community visiting</rdfs:label>
+        <rdfs:label xml:lang="de">Zu Gast weilendes Mitglied einer Ordensgemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -355,7 +426,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#member_of_a_religious_community_with_manual_focus">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#professed_member_of_a_religious_community"/>
+        <rdfs:comment xml:lang="en">A professed member of a religious community whose role centres on manual labour and the temporal affairs of the house, as distinct from choir religious focused on liturgy and study. Covers, for example, lay brothers and sisters (conversi/conversae).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Professmitglied einer Ordensgemeinschaft, dessen Aufgabenbereich auf manuelle Arbeit und die weltlichen Belange des Hauses ausgerichtet ist, in Abgrenzung zu den auf Liturgie und Studium konzentrierten Chorreligiosen. Erfasst zum Beispiel Laienbrüder und Laienschwestern (Konversen, conversi/conversae).</rdfs:comment>
         <rdfs:label xml:lang="en">Member of a religious community with manual focus</rdfs:label>
+        <rdfs:label xml:lang="de">Mitglied einer Ordensgemeinschaft mit manueller Ausrichtung</rdfs:label>
     </owl:Class>
     
 
@@ -364,7 +438,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#member_of_a_religious_community_with_spiritual_focus">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#professed_member_of_a_religious_community"/>
+        <rdfs:comment xml:lang="en">A professed member of a religious community whose role centres on liturgy, prayer, and study, as distinct from members focused on manual labour. Covers, for example, choir religious (Chormönche, Chorfrauen).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Professmitglied einer Ordensgemeinschaft, dessen Aufgabenbereich auf Liturgie, Gebet und Studium ausgerichtet ist, in Abgrenzung zu den auf manuelle Arbeit konzentrierten Mitgliedern. Erfasst zum Beispiel Chorreligiose (Chormönche, Chorfrauen).</rdfs:comment>
         <rdfs:label xml:lang="en">Member of a religious community with spiritual focus</rdfs:label>
+        <rdfs:label xml:lang="de">Mitglied einer Ordensgemeinschaft mit geistlicher Ausrichtung</rdfs:label>
     </owl:Class>
     
 
@@ -373,7 +450,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#monastic_community">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#group"/>
+        <rdfs:comment xml:lang="en">A monastic community as a concrete group of religious living together at a particular house (e.g. a specific monastery, abbey, or convent), as distinct from the wider religious order it may belong to.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Klostergemeinschaft als konkrete Gemeinschaft von Ordensangehörigen an einem bestimmten Haus (z. B. einem bestimmten Kloster, einer Abtei oder einem Konvent), abzugrenzen vom übergeordneten Orden, dem sie angehören kann.</rdfs:comment>
         <rdfs:label xml:lang="en">Monastic community</rdfs:label>
+        <rdfs:label xml:lang="de">Klostergemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -382,7 +462,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#monastic_office">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#office"/>
+        <rdfs:comment xml:lang="en">An office held within a monastic community (e.g. sacristan, cellarer, novice master, librarian).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Amt innerhalb einer Klostergemeinschaft (z. B. Sakristan, Kellermeister, Novizenmeister, Bibliothekar).</rdfs:comment>
         <rdfs:label xml:lang="en">Monastic office</rdfs:label>
+        <rdfs:label xml:lang="de">Klosteramt</rdfs:label>
     </owl:Class>
     
 
@@ -391,7 +474,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#monastic_office_with_manual_focus">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#monastic_office"/>
+        <rdfs:comment xml:lang="en">A monastic office whose duties are predominantly practical and material, concerned with the temporal affairs of the house (e.g. cellarer, gardener, infirmarian).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Klosteramt, dessen Aufgaben überwiegend praktisch-materieller Art sind und sich auf die weltlichen Belange des Hauses beziehen (z. B. Kellermeister, Gärtner, Infirmar).</rdfs:comment>
         <rdfs:label xml:lang="en">Monastic office with manual focus</rdfs:label>
+        <rdfs:label xml:lang="de">Klosteramt mit manueller Ausrichtung</rdfs:label>
     </owl:Class>
     
 
@@ -400,7 +486,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#monastic_office_with_spiritual_focus">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#monastic_office"/>
+        <rdfs:comment xml:lang="en">A monastic office whose duties are predominantly spiritual, concerned with the liturgy, study, or pastoral life of the house (e.g. sacristan, novice master, cantor).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Klosteramt, dessen Aufgaben überwiegend geistlicher Art sind und sich auf Liturgie, Studium oder das geistliche Leben des Hauses beziehen (z. B. Sakristan, Novizenmeister, Kantor).</rdfs:comment>
         <rdfs:label xml:lang="en">Monastic office with spiritual focus</rdfs:label>
+        <rdfs:label xml:lang="de">Klosteramt mit geistlicher Ausrichtung</rdfs:label>
     </owl:Class>
     
 
@@ -410,7 +499,10 @@
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#office">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">An office: a formally defined position with associated duties, held by a person for a defined period. Treated both as an occupation (the duties performed) and as a status (the standing conferred by holding it).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Amt: eine formal definierte Position mit zugehörigen Aufgaben, die eine Person für einen bestimmten Zeitraum innehat. Wird sowohl als Tätigkeit (die ausgeübten Aufgaben) als auch als Status (die durch die Amtsinhabe verliehene Stellung) verstanden.</rdfs:comment>
         <rdfs:label xml:lang="en">Office</rdfs:label>
+        <rdfs:label xml:lang="de">Amt</rdfs:label>
     </owl:Class>
     
 
@@ -419,7 +511,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#office_in_a_diocese">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#office"/>
+        <rdfs:comment xml:lang="en">An office held within the structure of a diocese (e.g. bishop, vicar general, canon of a cathedral chapter, archdeacon).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Amt innerhalb der Struktur einer Diözese (z. B. Bischof, Generalvikar, Domkapitular, Archidiakon).</rdfs:comment>
         <rdfs:label xml:lang="en">Office in a diocese</rdfs:label>
+        <rdfs:label xml:lang="de">Amt in einer Diözese</rdfs:label>
     </owl:Class>
     
 
@@ -428,7 +523,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#official">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:comment xml:lang="en">A person holding a formal office of any kind — the activity of being an officeholder, regardless of the sphere (monastic, ecclesiastical, secular). Examples: royal councillor, novice mistress, senator.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Person, die ein formales Amt jeglicher Art innehat — die Tätigkeit des Amtstragens, unabhängig vom Bereich (klösterlich, kirchlich, weltlich). Beispiele: Hofrat, Novizenmeisterin, Senator.</rdfs:comment>
         <rdfs:label xml:lang="en">Official</rdfs:label>
+        <rdfs:label xml:lang="de">Amtsträger</rdfs:label>
     </owl:Class>
     
 
@@ -437,7 +535,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#paged_source">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#source"/>
+        <rdfs:comment xml:lang="en">A source whose internal locations are addressed by page or folio numbers, such as a printed book or a manuscript codex.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Quelle, deren Stellen über Seiten- bzw. Folionummern angesprochen werden, wie ein gedrucktes Buch oder ein handschriftlicher Kodex.</rdfs:comment>
         <rdfs:label xml:lang="en">Paged source</rdfs:label>
+        <rdfs:label xml:lang="de">Paginierte Quelle</rdfs:label>
     </owl:Class>
     
 
@@ -446,7 +547,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#parish">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#religious_polity"/>
+        <rdfs:comment xml:lang="en">A parish: the smallest territorial unit of ecclesiastical jurisdiction, usually under the pastoral care of a parish priest.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Pfarre: die kleinste territoriale Einheit kirchlicher Jurisdiktion, üblicherweise unter der seelsorglichen Leitung eines Pfarrers.</rdfs:comment>
         <rdfs:label xml:lang="en">Parish</rdfs:label>
+        <rdfs:label xml:lang="de">Pfarre</rdfs:label>
     </owl:Class>
     
 
@@ -455,7 +559,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#polity">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#group"/>
+        <rdfs:comment xml:lang="en">A polity: an organised body governing a defined territory or community, considered as a group.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Körperschaft: ein organisiertes Gebilde, das ein bestimmtes Gebiet oder eine Gemeinschaft regiert, hier als Gruppe modelliert.</rdfs:comment>
         <rdfs:label xml:lang="en">Polity</rdfs:label>
+        <rdfs:label xml:lang="de">Körperschaft</rdfs:label>
     </owl:Class>
     
 
@@ -464,7 +571,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#procurator">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#community_superior"/>
+        <rdfs:comment xml:lang="en">A procurator of a religious community: an officer responsible for the temporal and financial affairs of the house, modelled here as a kind of community superior.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Prokurator einer Ordensgemeinschaft: ein für die weltlichen und finanziellen Angelegenheiten des Hauses verantwortlicher Funktionsträger, hier als eine Form des Gemeinschaftsoberen modelliert.</rdfs:comment>
         <rdfs:label xml:lang="en">Procurator</rdfs:label>
+        <rdfs:label xml:lang="de">Prokurator</rdfs:label>
     </owl:Class>
     
 
@@ -473,7 +583,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#professed_member_of_a_religious_community">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#member_of_a_religious_community"/>
+        <rdfs:comment xml:lang="en">A member of a religious community who has taken religious vows (profession), as distinct from candidates or novices.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Mitglied einer Ordensgemeinschaft, das die Ordensgelübde (Profess) abgelegt hat, in Abgrenzung zu Kandidaten oder Novizen.</rdfs:comment>
         <rdfs:label xml:lang="en">Professed member of a religious community</rdfs:label>
+        <rdfs:label xml:lang="de">Professmitglied einer Ordensgemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -482,7 +595,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#religious_denomination">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#group"/>
+        <rdfs:comment xml:lang="en">A religious denomination: a distinct religious body characterised by shared doctrine, ritual, and organisational structure.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Konfession: eine eigenständige religiöse Gemeinschaft mit gemeinsamer Lehre, gemeinsamem Ritus und gemeinsamer organisatorischer Struktur.</rdfs:comment>
         <rdfs:label xml:lang="en">Religious denomination</rdfs:label>
+        <rdfs:label xml:lang="de">Konfession</rdfs:label>
     </owl:Class>
     
 
@@ -491,7 +607,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#religious_life_outside_a_community">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">The status of leading a religious life outside the structures of a religious community, either stationary or itinerant. Covers, for example, hermits and pilgrims.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Der Status eines religiösen Lebens außerhalb der Strukturen einer Ordensgemeinschaft, in ortsfester oder wandernder Form. Erfasst zum Beispiel Eremiten und Pilger.</rdfs:comment>
         <rdfs:label xml:lang="en">Religious life outside a community</rdfs:label>
+        <rdfs:label xml:lang="de">Religiöses Leben außerhalb einer Gemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -500,7 +619,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#religious_name">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#name"/>
+        <rdfs:comment xml:lang="en">A religious name (name in religion) taken on entry into a religious community, often at profession, in place of or alongside the given name.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Ordensname (Klostername), der beim Eintritt in eine Ordensgemeinschaft, oft bei der Profess, anstelle oder zusätzlich zum Vornamen angenommen wird.</rdfs:comment>
         <rdfs:label xml:lang="en">Religious name</rdfs:label>
+        <rdfs:label xml:lang="de">Ordensname</rdfs:label>
     </owl:Class>
     
 
@@ -509,7 +631,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#religious_order">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#group"/>
+        <rdfs:comment xml:lang="en">A religious order: a wider organisation of religious living under a common rule (e.g. Benedictines, Cistercians, Dominicans), comprising several individual communities.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Orden: eine übergreifende Gemeinschaft von Ordensangehörigen unter einer gemeinsamen Regel (z. B. Benediktiner, Zisterzienser, Dominikaner), die mehrere einzelne Klostergemeinschaften umfasst.</rdfs:comment>
         <rdfs:label xml:lang="en">Religious order</rdfs:label>
+        <rdfs:label xml:lang="de">Orden</rdfs:label>
     </owl:Class>
     
 
@@ -518,7 +643,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#religious_polity">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#polity"/>
+        <rdfs:comment xml:lang="en">A religious polity: a territorial unit of ecclesiastical jurisdiction (e.g. diocese, parish).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine kirchliche Körperschaft: eine territoriale Einheit kirchlicher Jurisdiktion (z. B. Diözese, Pfarre).</rdfs:comment>
         <rdfs:label xml:lang="en">Religious polity</rdfs:label>
+        <rdfs:label xml:lang="de">Kirchliche Körperschaft</rdfs:label>
     </owl:Class>
     
 
@@ -527,7 +655,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#religious_title">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#title"/>
+        <rdfs:comment xml:lang="en">A religious title borne by a person on the basis of their ecclesiastical or monastic standing (e.g. Reverend, Dom, Mother).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein religiöser Titel, den eine Person aufgrund ihrer kirchlichen oder klösterlichen Stellung trägt (z. B. Hochwürden, Dom, Mater).</rdfs:comment>
         <rdfs:label xml:lang="en">Religious title</rdfs:label>
+        <rdfs:label xml:lang="de">Religiöser Titel</rdfs:label>
     </owl:Class>
     
 
@@ -536,7 +667,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#rule_of_a_community">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:comment xml:lang="en">The activity of governing a religious community: the act of leadership exercised by its head, as distinct from the status of community superior (which is the standing) and from administration_of_a_community (which is the broader operational work).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Die Tätigkeit der Leitung einer Ordensgemeinschaft: das vom Vorsteher ausgeübte Leitungshandeln, in Abgrenzung zum Status des Gemeinschaftsoberen (der Stellung) und zur Verwaltung einer Gemeinschaft (der breiteren operativen Arbeit).</rdfs:comment>
         <rdfs:label xml:lang="en">Rule of a community</rdfs:label>
+        <rdfs:label xml:lang="de">Leitung einer Gemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -545,7 +679,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#rule_of_a_school">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:comment xml:lang="en">The activity of running an educational institution: the ongoing administrative and governing work performed by its head. Covers educational institutions of any kind, e.g. schools, universities, and colleges (such as Jesuit colleges). Typically held together with the status of ruler of a school.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Die Tätigkeit der Leitung einer Bildungseinrichtung: die laufende Verwaltungs- und Leitungsarbeit, die von ihrem Vorsteher ausgeübt wird. Erfasst Bildungseinrichtungen aller Art, z. B. Schulen, Universitäten und Kollegien (etwa Jesuitenkollegien). Üblicherweise gemeinsam mit dem Status eines Schulvorstehers verbunden.</rdfs:comment>
         <rdfs:label xml:lang="en">Rule of a school</rdfs:label>
+        <rdfs:label xml:lang="de">Leitung einer Bildungseinrichtung</rdfs:label>
     </owl:Class>
     
 
@@ -554,7 +691,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#ruler_of_a_school">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">The status of being the head of an educational institution (e.g. schoolmaster, rector of a university, rector of a college such as a Jesuit college).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Der Status der Leitung einer Bildungseinrichtung (z. B. Schulleiter, Rektor einer Universität, Rektor eines Kollegiums, etwa eines Jesuitenkollegiums).</rdfs:comment>
         <rdfs:label xml:lang="en">Ruler of a school</rdfs:label>
+        <rdfs:label xml:lang="de">Vorsteher einer Bildungseinrichtung</rdfs:label>
     </owl:Class>
     
 
@@ -563,7 +703,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#secular_office">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#office"/>
+        <rdfs:comment xml:lang="en">A secular (non-ecclesiastical) office, held outside the structures of the church or a religious community.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein weltliches (nicht-kirchliches) Amt, das außerhalb der Strukturen der Kirche oder einer Ordensgemeinschaft ausgeübt wird.</rdfs:comment>
         <rdfs:label xml:lang="en">Secular office</rdfs:label>
+        <rdfs:label xml:lang="de">Weltliches Amt</rdfs:label>
     </owl:Class>
     
 
@@ -572,7 +715,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#servant">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:comment xml:lang="en">A person employed in domestic or manual service, e.g. for a religious community, household, or estate.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Person, die im häuslichen oder manuellen Dienst beschäftigt ist, z. B. für eine Ordensgemeinschaft, einen Haushalt oder ein Gut.</rdfs:comment>
         <rdfs:label xml:lang="en">Servant</rdfs:label>
+        <rdfs:label xml:lang="de">Bediensteter</rdfs:label>
     </owl:Class>
     
 
@@ -581,7 +727,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#trade">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:comment xml:lang="en">A trade or craft practised as an occupation (e.g. carpenter, baker, weaver, smith).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Handwerk oder Gewerbe, das als Tätigkeit ausgeübt wird (z. B. Zimmermann, Bäcker, Weber, Schmied).</rdfs:comment>
         <rdfs:label xml:lang="en">Trade</rdfs:label>
+        <rdfs:label xml:lang="de">Handwerk</rdfs:label>
     </owl:Class>
     
 
@@ -590,7 +739,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#unspecified_aspect">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#aspect"/>
+        <rdfs:comment xml:lang="en">A catch-all aspect used when the precise nature of the aspect referenced by an event cannot or should not be further classified.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Auffang-Aspekt, der verwendet wird, wenn sich die genaue Art des im Ereignis genannten Aspekts nicht weiter klassifizieren lässt oder soll.</rdfs:comment>
         <rdfs:label xml:lang="en">Unspecified aspect</rdfs:label>
+        <rdfs:label xml:lang="de">Unbestimmter Aspekt</rdfs:label>
     </owl:Class>
     
 
@@ -599,7 +751,10 @@
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#vice_community_superior">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#community_superior"/>
+        <rdfs:comment xml:lang="en">A deputy to the head of a religious community (e.g. subprior, subprioress).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Stellvertreter bzw. eine Stellvertreterin des Vorstehers einer Ordensgemeinschaft (z. B. Subprior, Subpriorin).</rdfs:comment>
         <rdfs:label xml:lang="en">Vice community superior</rdfs:label>
+        <rdfs:label xml:lang="de">Stellvertretender Oberer einer Gemeinschaft</rdfs:label>
     </owl:Class>
     
 
@@ -609,7 +764,10 @@
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#visitator">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:comment xml:lang="en">A visitator: an official appointed (e.g. by an order or a bishop) to carry out a canonical visitation of a religious community or ecclesiastical institution.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Visitator: ein (z. B. von einem Orden oder Bischof) beauftragter Amtsträger zur Durchführung einer kanonischen Visitation einer Ordensgemeinschaft oder kirchlichen Einrichtung.</rdfs:comment>
         <rdfs:label xml:lang="en">Visitator</rdfs:label>
+        <rdfs:label xml:lang="de">Visitator</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
